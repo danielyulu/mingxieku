@@ -1,0 +1,222 @@
+.goods{
+    width: 990px;
+    margin:0 auto;
+    height:7015px;
+}
+.goods .Navigation{
+    padding: 10px 0;
+    font-family: '宋体';
+    color: #999;
+}
+.goods .n_bar{
+    border: 1px solid #e5e5e5;
+    background: #f1f1f1;
+    padding-left: 1em;
+    font-size: 14px;
+    font-weight: 700;
+    height: 30px;
+    line-height: 30px;
+    }
+.goods .n_bar p{
+    font-size: 14px;
+}
+.goods .n_bar p span{
+    font-size:12px;
+}    
+.goods .n_filterbox{
+    border: 1px solid #e5e5e5;
+    border-top: 0;
+    margin-bottom: 0;
+    background: #fafafa;
+}
+.n_select {
+    overflow: hidden;
+}
+#n_select{
+    height: 386px;
+}
+.goods .n_filterbox .n_select .f_type_dl{
+    display: block;
+    padding: 12px 110px 4px 70px;
+    border-bottom: 1px dotted #ccc;
+    position: relative;
+    white-space: nowrap;
+    zoom: 1;
+}
+.more_open{
+    position: absolute;
+    top: 11px;
+    right: 58px;
+    color: #666;
+    line-height: 16px;
+    border: 1px solid #ddd;
+    font-weight: bold;
+    background: #efefef;
+}
+.more_open img{
+        padding: 0 5px 0 7px;
+}
+.n_select dl{
+    display: block;
+    padding: 12px 110px 4px 70px;
+    border-bottom: 1px dotted #ccc;
+    position: relative;
+    white-space: nowrap;
+    zoom: 1;
+}
+.n_select dl .open{
+    padding: 0 15px 0 3px;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    color: #666;
+    /*background: url(//images.s.cn/themes/scn2012/images/skin/list_icon.png) no-repeat 100% -338px;*/
+    cursor: pointer;
+    font-family: '宋体';
+    border-radius: 2px;    
+}
+
+.n_select dl dt{
+    display: block;
+    width: 65px;
+    position: absolute;
+    left: 0;
+    top: 12px;
+    text-align: right;
+    color: #888;
+}
+.n_select dl dd{
+    width: 110px;
+    height: 23px;
+    float: left;
+    white-space: nowrap;    
+}
+.n_select dl.select_dl{
+    width: 808px;
+    height: 80px;
+    overflow: hidden;
+    background:#fff;
+}
+.n_select dl.select_dl dd{
+    height: 42px;
+    margin: 0 25px 0 0;
+    margin: 0 30px 0 0;
+    overflow: hidden;
+    width: 85px;
+}
+.n_select dl#f_category_dl{
+    width: 808px;
+    height: 44px;
+    overflow: hidden;
+}
+.n_select dl.select_dl dd a{
+    height: 32px;
+    float: left;
+    width: 57px;
+    margin: 0;
+    line-height: 8;
+    background-position: -5px -422px;
+    background: url("../img/nike.jpg");
+}
+#n_select_open{
+    width: 98px;
+    height: 34px;
+    padding-right: 10px;
+    line-height: 28px;
+    color: #999;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    margin-top: -1px;
+    background:#ccc;
+    display:block;
+}
+#n_select_close{
+    display:none;
+    width: 98px;
+    height: 34px;
+    padding-right: 10px;
+    line-height: 28px;
+    color: #999;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    margin-top: -1px;
+    background:#ccc;
+    display:none;
+}
+
+/*商品列表*/
+.goods .page{
+    border: 1px solid #dbdbdb;
+    border-top-width: 4px;
+    background: #f7f7f7;
+    height: 36px;
+    line-height: 36px;
+    color: #666;
+    padding: 0 5px 0 10px;
+    margin-top:10px;
+    display:block;
+    width: 975px;
+}
+.goods .page .desc{
+    width: 200px;
+}
+.goods .page .desc i{float:left;}
+.goods .page .desc button{
+    display: block;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    color: #666;
+    border-radius: 2px;
+    background: #ccc url(//images.s.cn/themes/scn2012/images/skin/list_icon.png) no-repeat 34px -159px;
+    margin: 8px 6px 0 3px;
+    padding: 0 16px 0 7px;
+    font-family: '宋体';
+    text-decoration: none;
+}
+.goods .pages{
+    float:right;
+    padding-right: 8px;
+    width: 130px;
+    height: 41px;
+}
+.goodlists dl{
+    width: 220px;
+    margin: 20px 11px 10px;
+    border: 1px solid #eee;
+    height: 291px;
+    float: left;
+}
+.goodlists dt{
+    height: 210px;
+    border: 0;
+    padding: 3px 0 3px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.goodlists ul{
+    width: 203px;
+    padding: 5px 5px 5px 10px;
+}
+.goodlists li{
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+}
+.goodlists li .price{
+    font-size: 12px;
+    color: #555;
+    font: 14px verdana;
+    padding-right: .8em;
+}
+.goodlists li .del_price{
+    font-family: verdana;
+    color: #888;
+    text-decoration: line-through;
+}

@@ -1,0 +1,639 @@
+/*------------------ 轮播图-------------- */
+.banner{height:550px;margin: 0 auto;background:red;overflow:hidden;position:relative;}
+.banner .lunbo{height: 550px;position:absolute;top:0;}
+.banner .lunbo li{
+    height: 550px;
+    float:left;
+    position:relative;
+}
+.banner .scroll_nav{
+    position: absolute;
+    bottom:16px;
+}
+.banner .scroll_nav li{
+    display: block;
+    float: left;
+    width: 14px;
+    height: 14px;
+    text-indent: -99px;
+    overflow: hidden;
+    background: #B5B5B5;
+    border-radius: 50%;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.brand{margin-top:32px;}
+.brand>.container{background:#fff;}
+.brand_l ul{
+    float:left;
+    width: 987px;
+    border-left:1px solid #DFDFDF;
+    border-top:1px solid #DFDFDF;
+    background-color:#fff;
+}
+
+.brand_l ul li{
+    float: left;
+    width: 140px;
+    height: 70px;
+    border-right:1px solid #DFDFDF;
+    border-bottom:1px solid #DFDFDF; 
+}
+.brand_l ul li a{
+    position:relative;
+    width: 140px;
+    height: 30px;
+    display:block;
+    text-align: center;
+    padding-top:44px;
+}
+.brand_l ul li img{
+    position:absolute;
+    top:10px;
+    left:33px;
+}
+.brand_l ul li span{
+    display:none;
+    font-size: 14px;
+    color:black;
+    font-weight: bold;
+    background:#DFDFDF;
+    width: 140px;
+    height:70px;
+    text-align: center;
+    line-height: 70px;
+}
+.brand_l ul li:hover a{
+    display:none; transition:all 3s linear 1s;
+}
+.brand_l ul li:hover span{
+    display:block;
+
+}
+
+.brand_r{
+    width: 190px;
+    float:right;
+    height: 214px;
+}
+.brand_r .brand_r_t{
+    width: 172px;
+    height: 60px;
+    padding:3px 8px;
+    border:1px solid #ccc;
+}
+
+.brand_r_t li{
+        line-height: 20px;
+        padding-left:10px;
+        position:relative;
+}
+.brand_r_t li:hover a{
+    text-decoration: underline;
+    color:red;  
+}
+
+.brand_r_t ul li>i{
+    width: 9px;
+    height: 8px;
+    background:url("../img/dian.jpg");
+    position:absolute;
+    left: -4px;
+    top: 6px;
+}
+.brand_r_b{
+    width: 182px;
+    height: 104px;
+    padding:3px;
+    border:1px solid #ccc;
+}
+.special ul li{
+    float:left;margin: 10px 8px 10px 0;
+}
+.special ul li:hover img{
+    width: 226px;
+    height: 286px;
+    border: 2px solid #c00;
+}
+.daohang .container{
+    margin-top:20px;
+    height: 267px;
+    background: #fff;
+}
+.daohang .daohang_l{
+    width: 301px;
+    height: 265px;
+    float: left;
+    border: 1px solid #e6e6e6;
+    margin-right: 5px;
+    padding-left: 137px;
+    position: relative;
+}
+.daohang .daohang_c{
+    width: 301px;
+    height: 265px;
+    float: left;
+    border: 1px solid #e6e6e6;
+    margin-right: 5px;
+    padding-left: 137px;
+    position: relative;
+}
+.daohang .daohang_r{
+    width: 156px;
+    height: 265px;
+    float: left;
+    border: 1px solid #e6e6e6;
+    margin-right: 5px;
+    padding-left: 137px;
+    position: relative;
+}
+.daohang img{
+    display: block;
+    position: absolute;
+    top: -18px;
+    left: 0px;
+}
+.daohang .cons{
+    margin-left: 0;
+    margin-top: 23px;
+    padding-left: 10px;
+    padding-right: 0;
+    border-right: none;
+    width: 130px;
+    height: 190px;
+    float: left;
+}
+.daohang .cons .cons1{
+    float: left;
+    cursor: pointer;
+    background: url("../img/leibie.png") no-repeat 0 -52px;
+    width: 122px;
+    height: 52px;
+    display: block;
+}
+.daohang .cons .cons2{
+    float: left;
+    cursor: pointer;
+    background: url("../img/leibie2.png") no-repeat 0 -52px;
+    width: 122px;
+    height: 52px;
+    display: block;
+    margin-top:5px;
+}
+.daohang .nav1_con{
+    height: 239px;
+    width: 161px;
+    padding: 15px 0 11px 0px;
+    float: left;
+}
+.daohang .nav1_con li{
+    display: block;
+    float: left;
+    width: 67px;
+    border-right: 1px solid #e2e2e2;
+    padding-left: 13px;
+}
+.daohang .nav1_con li h4{
+    font-size: 16px;
+    display: inline;
+    padding-bottom: 7px;
+    height: 24px;
+    line-height: 24px;
+    color: #575757;
+    font-weight: bold;  
+}
+.daohang .nav1_con li p a{
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    line-height: 26px;
+    vertical-align: bottom;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.floor1{
+    height: 426px;
+    background:#fff;
+    margin: 15px auto 0;
+}
+.floor2{
+    height: 426px;
+    background:#fff;
+    margin: 15px auto 0;
+}
+.floor3{
+    height: 426px;
+    background:#fff;
+    margin: 15px auto 0;
+}
+.floor4{
+    height: 426px;
+    background:#fff;
+    margin: 15px auto 0;
+}
+.floor5{
+    height: 426px;
+    background:#fff;
+    margin: 15px auto 0;
+}
+.floor6{
+    height: 426px;
+    background:#fff;
+    margin: 15px auto 0;
+}
+.floor7{
+    height: 426px;
+    background:#fff;
+    margin: 15px auto 0;
+}
+.floor8{
+    height: 426px;
+    background:#fff;
+    margin: 15px auto 0;
+}
+.floor .lt{
+    width: 191px;
+    height: 424px;
+    float: left;
+}
+.floor .hd_f .hd_f_t{
+    width: 190px;
+}
+.floor .hd_f .hd_f_t li a{
+    width: 94px;
+    height: 40px;
+    float:left;
+    border-bottom: 1px dashed #ddd;
+    position:relative;  
+}
+.floor .hd_f .hd_f_t li a span{
+    display:inline-block;
+    width: 95px;
+    height: 41px;
+    text-align: center;
+    line-height: 41px;
+    display:none;
+    background:#5d5959;
+}
+.floor .hd_f .hd_f_t li a img{
+    position:absolute;
+    top: 0px;
+    left:12px;
+}
+.floor .hd_f .hd_f_t li a:hover img{
+    display:none;
+}
+.floor .hd_f .hd_f_t li a:hover span{
+    display:block;
+    color:#fff;
+    font-weight: bold;
+}
+
+.hd_f_b li{
+    height: 17px;
+    width: 87px;
+    float:left;
+    color: #3e3e3e;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: Microsoft Yahei;
+    line-height:30px;
+    padding: 6px 0px 4px 8px;
+}
+.hd_f_b li a:hover{
+    text-decoration: underline;
+    color: #666;
+}
+.floor .lt_t{
+    float:left;
+    display:block;
+    width: 199px;
+    height: 244px;
+    border-bottom:1px solid #d2d2d2;
+}
+.floor .lt_b{
+    display:block;
+    width: 199px;
+    height: 180px;
+    float:left;
+}
+.footbrand{margin:15px 0 20px 0;}
+.footbrand .container{
+    background:#fff;
+}
+.footbrand .footbrand_t{
+    border-left:1px solid #ccc;
+    border-top:1px solid #ccc;
+    background-color: #fff;
+}
+.footbrand_t a{
+    float: left;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;  
+    width: 117px;
+    height: 70px;
+    background:url("../img/brand/brand1.jpg") no-repeat; 
+    background-position:25px 18px;
+    position:relative;
+}
+.footbrand_t a span{
+    width: 118px;
+    height: 70px;
+    background:black;
+    position:absolute;
+    top: 0;
+    left:0;
+    opacity:0.3;
+    display:none;
+}
+.footbrand_t a:hover span{
+    display:block;
+}
+.footbrand_c{
+    height: 36px;
+    border-bottom:1px solid #ccc;
+    position:relative;
+}
+.footbrand_c h3{
+    display:block;
+    width: 72px;
+    height: 24px;
+    padding:10px 20px;
+    position:absolute;
+    left: 50%;
+    font-size: 18px;
+    font-weight: 100;
+    margin: 15px 0 0 -60px;
+    font-family: microsoft yahei;
+    background: #fff;
+}
+.footbrand_b{
+    height: 167px;
+    margin-top:28px;
+}
+.footbrand_b dl{
+    width: 148px;
+    float: left;
+}
+.footbrand_b dt{
+    text-align: center;
+}
+.footbrand_b dt a{
+    color: #222;
+    text-decoration: none;
+}
+.footbrand_b dt a s{
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+}
+.footbrand_b dd{
+    border-right: 1px dotted #ccc;
+    height: 68px;
+    overflow: hidden;
+    padding-left: 16px;
+}
+.footbrand_b dd a{
+    color: #555;
+    display: block;
+    float: left;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    width: 62px;
+    font-size: 12px;
+    text-decoration: none;
+}
+.footbrand_b dd a:hover{
+    text-decoration:underline;
+    color:red;
+}
+/*--------------------底部链接--------------------*/
+#foot{width:100%;border-top:2px solid #CC3C3B;background:#F5F5F5;border-bottom:1px solid #DEDEDE;}
+#foot .foot_l{
+    width: 231px;
+    height:195px;
+    padding:15px 0 16px 15px;
+}
+#foot .foot_l .foot_l_t{
+    height:195px;
+    /*width: 230px;*/
+    border-right:1px solid #DEDEDE;
+}
+#foot .foot_l .foot_l_t h3{
+    padding-left:28px;
+    font-size: 14px;
+    color:#989898;
+    position:relative;
+
+}
+#foot .foot_l .foot_l_t h3 i{
+    height:16px;
+    width: 23px;
+    background:url("../img/jinlingtu2.png")0 -500px;
+    position:absolute;
+    top:0;
+    left:0;
+}
+#foot .foot_l .foot_l_t ul{
+    font-size: 18px;
+    color:#B90D1B;
+    font-weight:bold;
+    line-height:28px;
+}
+#foot .foot_l .foot_l_t li{
+    font-size: 12px;
+    color:#9B9B9B;
+    font-weight:normal;
+    line-height:18px;
+}
+#foot .foot_l .foot_l_t i{
+    width: 176px;
+    height: 96px;
+    background:url("../img/jinlingtu2.png")0 -543px;
+    position:absolute;
+    top:99px;
+    left:0;
+}
+
+#foot .foot_c{
+    padding:15px 0 16px 0;
+}
+
+#foot .foot_c1{
+    border-left:1px solid #FFFFFF;
+    width:275px;
+    position:relative;
+}
+
+#foot .foot_c1 i{
+    width: 139px;
+    height: 36px;
+    background:url("../img/jinlingtu2.png") -247px -502px;
+    position:absolute;
+    top:0;
+    left:50px;
+}
+#foot .foot_c1 ul{
+    padding-top:65px;
+    font-size: 16px;
+    color:#656565;
+    font-weight:bold;
+    padding-left:50px;
+}
+
+#foot .foot_c1 li{
+    line-height:18px;
+    font-size: 14px;
+    color:#989898;
+    padding-top:8px;
+}
+
+#foot .foot_c2{
+    width:225px;
+    position:relative;
+}
+#foot .foot_c2 i{
+    width: 137px;
+    height: 36px;
+    background:url("../img/jinlingtu2.png") -247px -502px;
+    position:absolute;
+    top:0;
+    left:0;
+}
+#foot .foot_c2 ul{
+    padding-top:65px;
+    font-size: 16px;
+    color:#656565;
+    font-weight:bold;  
+}
+#foot .foot_c2 li{
+   line-height:18px;
+    font-size: 14px;
+    color:#989898;
+    padding-top:8px; 
+}
+
+#foot .foot_c3{
+    width:225px;
+    position:relative;
+}
+#foot .foot_c3 i{
+    width: 162px;
+    height: 36px;
+    background:url("../img/jinlingtu2.png") -615px -502px;
+    position:absolute;
+    top:0;
+    left:0;
+}
+#foot .foot_c3 ul{
+    padding-top:65px;
+    font-size: 16px;
+    color:#656565;
+    font-weight:bold;  
+}
+#foot .foot_c3 li{
+   line-height:18px;
+    font-size: 14px;
+    color:#989898;
+    padding-top:8px; 
+}   
+
+
+
+#foot .foot_c4{
+    width:218px;
+    position:relative;
+}
+#foot .foot_c4 i{
+    width: 141px;
+    height: 35px;
+    background:url("../img/jinlingtu2.png") -247px -589px;
+    position:absolute;
+    top:0;
+    left:0;
+}
+#foot .foot_c4 ul{
+    padding-top:65px;
+    font-size: 16px;
+    color:#656565;
+    font-weight:bold;  
+}
+#foot .foot_c4 li{
+   line-height:18px;
+    font-size: 14px;
+    color:#989898;
+    padding-top:8px; 
+}
+.blogroll{background:#f8f8f8;}
+.blogroll .foot_r{
+    width: 100%;
+    height: 39px;
+    padding:20px 0;text-align: center;
+}
+.blogroll .foot_r span{
+    color: #ccc;
+    font-family: '宋体';
+}
+.blogroll .foot_r span a{
+    padding:0 10px;
+    border-right:1px solid #ccc;
+    color: #777;
+}
+.blogroll .record{text-align: center;}
+.blogroll .record s{
+        font-size: 20px;
+    color: #c00;
+    font-weight: 700;
+}
+.blogroll .record a{
+    text-decoration: none;
+    margin-left:5px;
+}
+.blogroll .row3{
+    width: 640px;
+    height: 50px;
+    margin: 0 auto 30px;
+}
+.blogroll .row3 a{
+    width: 112px;
+    height: 47px;
+    margin-right: 7px;
+}
+.blogroll .rolling{
+    border-top: 1px dashed #ccc;
+    border-bottom: 1px dashed #ccc;
+    height: 18px;
+    padding: 5px;
+    width: 990px;
+    position:relative;
+    margin:0 auto;overflow: hidden;
+}
+.blogroll .rolling h4{
+    float: left;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0;
+    color: #999;
+    line-height: 20px;
+}
+.blogroll .rolling ul{
+    width: 880px;
+    float:left;
+    font-size: 12px;
+    line-height: 20px;
+    position:absolute;
+    top:6px;
+    left:65px;
+}
+.blogroll .rolling ul li{
+    /*overflow: hidden;*/
+    height: 20px;
+}
+.blogroll .rolling ul li a{
+    color: #999;
+    float: left;
+    padding: 0 5px;
+}

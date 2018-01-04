@@ -1,0 +1,110 @@
+.reg{
+    width: 980px;
+    height:100%;
+    margin:0 auto;
+}
+.AllWrapInside{
+    height: 480px;
+    margin: 0 auto;
+}
+.c999{
+    margin: 0 auto;
+    width: 780px;
+    line-height: 30px;
+    text-align: right;
+    padding-right: 10px;
+    color: #999;
+}
+.AllWrapInside .zc{
+    width: 780px;
+    margin:10px auto;
+    height: 440px;
+}
+.AllWrapInside .regzhuche{ 
+    padding: 0;
+    border: 1px solid #efefef;
+    border-radius: 2px;
+    box-shadow: 0 0 8px #E5E5E5;
+}
+.regzhuche .zchead{
+    font-size: 16px;
+    font-family: microsoft yahei;
+    color: #888;
+    background: #f8f8f8;
+    padding: 4px 10px;
+    border-bottom: 1px solid #efefef;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+}
+.regzhuche_l{
+    width: 65%;
+}
+
+.regzhuche_r{
+    padding:54px 0;
+    width: 35%;
+    text-align: center;
+}
+.regzhuche_r .zhanghao{
+    border-left: 1px dashed #ccc;
+    height: 271px;
+}
+
+.regzhuche_c table tbody th{
+    text-align: right;
+    color: #666;
+    width: 75px;
+    padding: 0;
+}
+.regzhuche_c table{
+    height: 313px;
+}
+.regzhuche_c table tbody td{
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    font-family: Arial,Helvetica,sans-serif;
+    padding-top: 15px;
+}
+.regzhuche_c table td input{
+    width: 220px;
+    border: 1px solid #ccc;
+    padding: 3px 5px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 14px;
+}
+.zhanghao p{
+    padding-top:30px;
+    font-weight: bold;
+    color:black;
+}
+.zhanghao a{
+    width: 91px;
+    height: 32px;
+    line-height: 30px;
+    text-align: center;
+    color: #c66;
+    font-size: 14px;
+    font-weight: 700;
+    background:url("../img/loginbg.png");
+    display:block;
+    margin:10px auto;
+}
+.hint{
+    padding:5px;
+    display: none;
+    height: 16px;
+    line-height: 16px;
+    border: 1px solid #E6594E;
+    white-space: nowrap;
+    text-align: left;
+    color: #E6594E;
+    background:#fceae8;
+}
+.tanchuang{
+    position:absolute;
+    top: 50px;
+    left: -23px;
+    display:none;
+}

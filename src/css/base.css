@@ -1,0 +1,580 @@
+﻿@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }   /*去掉input等聚焦时的蓝色边框*/
+ul, ol { list-style:none; }
+input { padding-top:0; padding-bottom:0; font-family: "SimSun","宋体";}
+select, input { vertical-align:middle;}
+select, input, textarea { font-size:12px; margin:0; }
+textarea { resize:none; } /*防止拖动*/
+img {border:0; vertical-align:middle; }  /*  去掉图片低测默认的3像素空白缝隙，或者用display：block也可以*/
+table { border-collapse:collapse; }
+body {
+    font:12px/150% Arial,Verdana,"\5b8b\4f53";
+    color:#666;
+    background:#fff;
+}
+.clearfix:after {  /*清楚浮动*/
+   content:"";
+   display:block;
+   height:0;
+   clear:both;
+   overflow:hidden;
+   visibility:hidden;
+}
+a {color:#666; text-decoration:none; }
+a:hover{color:#C81623;}
+h1,h2,h3,h4,h5,h6 {text-decoration:none;font-weight:normal;font-size:100%;}  /*设置h标签的大小，设置跟父亲一样大的字体font-size:100%;*/
+s,i,em{font-style:normal;text-decoration:none;}
+.col-red{color: #C81623!important;}
+
+/*公共类*/
+.container {  /*版心 提取 */
+    width: 1190px;margin:0 auto;
+}
+.fl {
+    float:left;
+}
+.fr {
+    float:right;
+}
+.al {
+    text-align:left;
+}
+.ac {
+    text-align:center;
+}
+.ar {
+    text-align:right;
+}
+.hide {
+    display:none;
+}
+.font12{ font-size: 12px;}
+.font14{ font-size: 14px;}
+.font16{ font-size: 16px;}
+*{margin:0;padding:0;}
+
+/*-----------------头部---------------*/
+/*公共部分*/
+.shoes{
+    width:100%;
+    background:#f6f6f6;
+}
+#head{width:100%;height:25px;border-bottom:1px solid #E5E5E5; background:#EEEEEE;}
+#head .container{height:25px;}
+#head ul{height:25px;}
+#head ul li{float:left;position:relative;}
+#head ul li a{height:25px;display:block;font-size:12px;line-height:25px;float:left;}
+#head ul span{height:25px;border-right:1px solid #D4D4D4;padding:0 16px 0 15px;}
+#head .icon_l span{padding-left:35px;}
+#head .icon_r span{padding-right:26px;}
+#head .icon_r .icon_arror{
+    display:block;
+    height:9px;
+    width:8px;
+    background:url("../img/jinlingtu.png") -30px 0;
+    position:absolute;
+    top:50%;
+    margin-top:-4px;
+    right:9px;
+}
+#head .icon_l .aa{
+    display:block;
+    width:20px;
+    height:16px;
+    background:url("../img/jinlingtu.png"); 
+    position:absolute;
+    top:4px;
+    left:14px;
+}
+#head .icon_l .qq{background-position:-60px 0;}
+#head .icon_l .tell{background-position:-90px 0;}
+/*----------头部导航开始---------*/
+#nav{width:100%;height:77px;background:#fff;}
+#nav .container{height:77px;}
+#nav .logo{
+    display:block;
+    width:188px;
+    background:url("../img/jinlingtu.png") 0 -30px;
+    padding-left:262px;
+    float:left;
+}
+#nav .logo span{
+    height:16px;
+    width:127px;
+    font-size:16px;
+    padding:40px 29px 21px 16px;
+    line-height:77px;
+    color:#5C5C5C;
+}
+#nav .nav_c{
+    width:339px;
+    height:61px;
+    padding:16px 0 0 90px;
+}
+
+#nav .nav_c .logotext{
+    width:263px;
+    height:28px;
+    font-size:12px;
+    line-height:26px;
+    padding-left:9px;
+    color:#656565;
+    border:2px solid #D5D5D5;
+    border-right:0 none;
+    float:left;
+}
+#nav .nav_c .bt{
+    width:65px;
+    height:32px;
+    float:right;
+    color:#FFFAF7;
+    font-size:16px;
+    background-color:#444444;
+    font-weight:bold;
+    float:left;
+}
+#nav .nav_c p{
+    font-size: 12px;
+    color:#CDCDCD;
+    line-height:31px;
+}
+#nav .nav_c p span{
+    font-size: 12px;
+    /*color:#CDCDCD;*/
+}
+#nav .logo_r{
+    width:124px;
+    height:37px;
+    padding-top:20px;
+}
+#nav .logo_buy{
+    width:114px;
+    height:26px;
+    border:1px solid #D7D7D7;
+    padding-top:6px;
+    padding-left:10px;
+    background:#F5F5F5;
+}
+#nav .logo_buy i{
+    display:block;
+    width:24px;
+    height:20px;
+    background:url("../img/jinlingtu.png") 0 -150px;
+    float:left;
+}
+#nav .logo_r .logo_buy span{padding:0 2px;
+    font-weight:bold;font-size:14px;color:#D20202;}
+
+    /*------------------导航条------------*/
+#daohang{width:100%;height:34px;background:#A21F25;}
+#daohang .daohang_r{position:relative;}
+#daohang h3{width: 190px;height: 34px;background-color:#B9363C;text-align:center;font-size:14px;line-height:34px;color:#FEFEFC;font-weight:bold;}
+#daohang .daohang_b{width: 150px;height:382px;background:#1F1909;padding-top:3px;position:absolute;top:34px;left:0;display:none;}
+#daohang .daohang_b li{position:relative;}
+#daohang .daohang_b li a{display:block;font-size:13px;color:#FFFEF7;line-height:42px;position:relative;padding-left:40px;}
+#daohang .daohang_b i{display:block;height:28px;width: 28px;background:url("../img/jinlingtu.png")0 -190px;position:absolute;left:7px;top:7px;}
+#daohang .daohang_c{/*width:750px;height:34px;*//*background:black;*/}
+#daohang .daohang_c li,#daohang .daohang_r1 li{float:left;}
+#daohang .daohang_c a,#daohang .daohang_r1 a{display:block;padding-top:10px;height:24px;color:#FEFEFE;}
+#daohang .daohang_c span{font-size:14px;border-right:1px dashed #D89A9B;
+    padding: 0 24px 0 24px;}
+#daohang .daohang_c li:hover a{background:#444444;margin-left:-1px;padding-left:1px;}
+#daohang .daohang_c li:hover span{border-right:1px dashed #444;}
+
+/*----------导航右边-------------*/
+#daohang .daohang_r1 span{font-size:13px;border-right:1px solid #D08F93;padding:0 11px 0 10px;}
+#daohang .daohang_r1 i{height:17px;width: 33px;background:url("../img/dongtai.gif")-68px 0;position:absolute;right: -3px;top: -8px;}
+
+/*---------------------------底部------------------------*/
+.blogroll{background:#f8f8f8;}
+.blogroll .foot_r{
+    width: 100%;
+    height: 39px;
+    padding:20px 0;text-align: center;
+}
+.blogroll .foot_r span{
+    color: #ccc;
+    font-family: '宋体';
+}
+.blogroll .foot_r span a{
+    padding:0 10px;
+    border-right:1px solid #ccc;
+    color: #777;
+}
+.blogroll .record{text-align: center;}
+.blogroll .record s{
+        font-size: 20px;
+    color: #c00;
+    font-weight: 700;
+}
+.blogroll .record a{
+    text-decoration: none;
+    margin-left:5px;
+}
+.blogroll .row3{
+    width: 640px;
+    height: 50px;
+    margin: 0 auto 30px;
+}
+.blogroll .row3 a{
+    width: 112px;
+    height: 47px;
+    margin-right: 7px;
+}
+.blogroll .rolling{
+    border-top: 1px dashed #ccc;
+    border-bottom: 1px dashed #ccc;
+    height: 18px;
+    padding: 5px;
+    width: 990px;
+    position:relative;
+    margin:0 auto;overflow: hidden;
+}
+.blogroll .rolling h4{
+    float: left;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0;
+    color: #999;
+    line-height: 20px;
+}
+.blogroll .rolling ul{
+    width: 880px;
+    float:left;
+    font-size: 12px;
+    line-height: 20px;
+    position:absolute;
+    top:6px;
+    left:65px;
+}
+.blogroll .rolling ul li{
+    /*overflow: hidden;*/
+    height: 20px;
+}
+.blogroll .rolling ul li a{
+    color: #999;
+    float: left;
+    padding: 0 5px;
+}
+
+.footbrand{margin:15px 0 20px 0;}
+.footbrand .container{
+    background:#fff;
+}
+.footbrand .footbrand_t{
+    border-left:1px solid #ccc;
+    border-top:1px solid #ccc;
+    background-color: #fff;
+}
+.footbrand_t a{
+    float: left;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;  
+    width: 117px;
+    height: 70px;
+    background:url("../img/brand/brand1.jpg") no-repeat; 
+    background-position:25px 18px;
+    position:relative;
+}
+.footbrand_t a span{
+    width: 118px;
+    height: 70px;
+    background:black;
+    position:absolute;
+    top: 0;
+    left:0;
+    opacity:0.3;
+    display:none;
+}
+.footbrand_t a:hover span{
+    display:block;
+}
+.footbrand_c{
+    height: 36px;
+    border-bottom:1px solid #ccc;
+    position:relative;
+}
+.footbrand_c h3{
+    display:block;
+    width: 72px;
+    height: 24px;
+    padding:10px 20px;
+    position:absolute;
+    left: 50%;
+    font-size: 18px;
+    font-weight: 100;
+    margin: 15px 0 0 -60px;
+    font-family: microsoft yahei;
+    background: #fff;
+}
+.footbrand_b{
+    height: 167px;
+    margin-top:28px;
+}
+.footbrand_b dl{
+    width: 148px;
+    float: left;
+}
+.footbrand_b dt{
+    text-align: center;
+}
+.footbrand_b dt a{
+    color: #222;
+    text-decoration: none;
+}
+.footbrand_b dt a s{
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+}
+.footbrand_b dd{
+    border-right: 1px dotted #ccc;
+    height: 68px;
+    overflow: hidden;
+    padding-left: 16px;
+}
+.footbrand_b dd a{
+    color: #555;
+    display: block;
+    float: left;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    width: 62px;
+    font-size: 12px;
+    text-decoration: none;
+}
+.footbrand_b dd a:hover{
+    text-decoration:underline;
+    color:red;
+}
+/*--------------------底部链接--------------------*/
+#foot{width:100%;border-top:2px solid #CC3C3B;background:#F5F5F5;border-bottom:1px solid #DEDEDE;}
+#foot .foot_l{
+    width: 231px;
+    height:195px;
+    padding:15px 0 16px 15px;
+}
+#foot .foot_l .foot_l_t{
+    height:195px;
+    /*width: 230px;*/
+    border-right:1px solid #DEDEDE;
+}
+#foot .foot_l .foot_l_t h3{
+    padding-left:28px;
+    font-size: 14px;
+    color:#989898;
+    position:relative;
+
+}
+#foot .foot_l .foot_l_t h3 i{
+    height:16px;
+    width: 23px;
+    background:url("../img/jinlingtu2.png")0 -500px;
+    position:absolute;
+    top:0;
+    left:0;
+}
+#foot .foot_l .foot_l_t ul{
+    font-size: 18px;
+    color:#B90D1B;
+    font-weight:bold;
+    line-height:28px;
+}
+#foot .foot_l .foot_l_t li{
+    font-size: 12px;
+    color:#9B9B9B;
+    font-weight:normal;
+    line-height:18px;
+}
+#foot .foot_l .foot_l_t i{
+    width: 176px;
+    height: 96px;
+    background:url("../img/jinlingtu2.png")0 -543px;
+    position:absolute;
+    top:99px;
+    left:0;
+}
+
+#foot .foot_c{
+    padding:15px 0 16px 0;
+}
+
+#foot .foot_c1{
+    border-left:1px solid #FFFFFF;
+    width:275px;
+    position:relative;
+}
+
+#foot .foot_c1 i{
+    width: 139px;
+    height: 36px;
+    background:url("../img/jinlingtu2.png") -247px -502px;
+    position:absolute;
+    top:0;
+    left:50px;
+}
+#foot .foot_c1 ul{
+    padding-top:65px;
+    font-size: 16px;
+    color:#656565;
+    font-weight:bold;
+    padding-left:50px;
+}
+
+#foot .foot_c1 li{
+    line-height:18px;
+    font-size: 14px;
+    color:#989898;
+    padding-top:8px;
+}
+
+#foot .foot_c2{
+    width:225px;
+    position:relative;
+}
+#foot .foot_c2 i{
+    width: 137px;
+    height: 36px;
+    background:url("../img/jinlingtu2.png") -247px -502px;
+    position:absolute;
+    top:0;
+    left:0;
+}
+#foot .foot_c2 ul{
+    padding-top:65px;
+    font-size: 16px;
+    color:#656565;
+    font-weight:bold;  
+}
+#foot .foot_c2 li{
+   line-height:18px;
+    font-size: 14px;
+    color:#989898;
+    padding-top:8px; 
+}
+
+#foot .foot_c3{
+    width:225px;
+    position:relative;
+}
+#foot .foot_c3 i{
+    width: 162px;
+    height: 36px;
+    background:url("../img/jinlingtu2.png") -615px -502px;
+    position:absolute;
+    top:0;
+    left:0;
+}
+#foot .foot_c3 ul{
+    padding-top:65px;
+    font-size: 16px;
+    color:#656565;
+    font-weight:bold;  
+}
+#foot .foot_c3 li{
+   line-height:18px;
+    font-size: 14px;
+    color:#989898;
+    padding-top:8px; 
+}   
+
+
+
+#foot .foot_c4{
+    width:218px;
+    position:relative;
+}
+#foot .foot_c4 i{
+    width: 141px;
+    height: 35px;
+    background:url("../img/jinlingtu2.png") -247px -589px;
+    position:absolute;
+    top:0;
+    left:0;
+}
+#foot .foot_c4 ul{
+    padding-top:65px;
+    font-size: 16px;
+    color:#656565;
+    font-weight:bold;  
+}
+#foot .foot_c4 li{
+   line-height:18px;
+    font-size: 14px;
+    color:#989898;
+    padding-top:8px; 
+}
+.blogroll{background:#f8f8f8;}
+.blogroll .foot_r{
+    width: 100%;
+    height: 39px;
+    padding:20px 0;text-align: center;
+}
+.blogroll .foot_r span{
+    color: #ccc;
+    font-family: '宋体';
+}
+.blogroll .foot_r span a{
+    padding:0 10px;
+    border-right:1px solid #ccc;
+    color: #777;
+}
+.blogroll .record{text-align: center;}
+.blogroll .record s{
+        font-size: 20px;
+    color: #c00;
+    font-weight: 700;
+}
+.blogroll .record a{
+    text-decoration: none;
+    margin-left:5px;
+}
+.blogroll .row3{
+    width: 640px;
+    height: 50px;
+    margin: 0 auto 30px;
+}
+.blogroll .row3 a{
+    width: 112px;
+    height: 47px;
+    margin-right: 7px;
+}
+.blogroll .rolling{
+    border-top: 1px dashed #ccc;
+    border-bottom: 1px dashed #ccc;
+    height: 18px;
+    padding: 5px;
+    width: 990px;
+    position:relative;
+    margin:0 auto;overflow: hidden;
+}
+.blogroll .rolling h4{
+    float: left;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0;
+    color: #999;
+    line-height: 20px;
+}
+.blogroll .rolling ul{
+    width: 880px;
+    float:left;
+    font-size: 12px;
+    line-height: 20px;
+    position:absolute;
+    top:6px;
+    left:65px;
+}
+.blogroll .rolling ul li{
+    /*overflow: hidden;*/
+    height: 20px;
+}
+.blogroll .rolling ul li a{
+    color: #999;
+    float: left;
+    padding: 0 5px;
+}
